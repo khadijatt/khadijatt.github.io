@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Khadijat Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="portfolio.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    </head>
+    <body>
+        <div class="navbar" aria-label = "MenuBar">
+            <img class = "profpic" src="images/profpic.jpeg" alt = "Picture of Khadijat Kokumo smiling outside">
+            <h1 id = "name" >Khadijat Kokumo</h1>
+            <h2 id = "collegeinfo">Biomedical Engineering <br> Computer Science <br> <em>Northwestern University </em></h2>
+            <a title = "Home" href="portfolio.html#home" class="homenav">Home</a>
+            <a title = "Khadijat's Biography" href="biography.html">Biography</a>
+            <a title = "Khadijat's Projects" href="portfolio.html#projects" class="projectsnav">Projects</a>
+            <p id="resem"> <a href="portfolioresume.pdf" target="_blank"> Resume</a> <a title="Email Khadijat Kokumo" href="mailto:khadijatkokumo2024[at]u[dot]northwestern[dot]edu">Email</a></p>
+            <p id = "linkedin" ><span class="material-symbols-outlined">school</span> <br><a href="https://www.linkedin.com/in/khadijatkokumo/" target="_blank"> LinkedIn </a></p>
+
+        </div>
+
+        <div class = "content">
+            <section id = "home" class = "home">
+        
+                <div class="hero-text"> <span role = "img" aria-label = "Background Image of Khadijat Kokumo smiling"></span>
+                <h1>Hi, I am Khadijat Kokumo</h1>
+                <p>Welcome to my portfolio!</p>
+                <a href="biography.html">About Me</a>
+    
+            </section>
+
+            <section id="projects" class="projects">
+   
+                <h1>My Projects</h1>
+
+                <div id = "project1" onclick="openModal()">
+                    <h2>Theoretical basis and experimental validation of harmonic coherence-based ultrasound imaging for breast mass diagnosis</h2>
+                    <img src="images/proj1img.jpeg" alt="Picture of Khadijat smiling next to her research poster">       
+                    <h4>Johns Hopkins University <br> Jun 2022 - Aug 2022</h4> 
+                    <p>This past summer, I researched in the PULSE Lab at Johns Hopkins University to discuss imaging modes that can be used to improve the diagnosis of breast masses. I presented my work at the end of the program and this work will be presented again in late February at the SPIE Medical Imaging Conference in San Diego.</p>    
+                    <button type="button" id="project1btn" onclick="openModal()">Read More</button>
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p><br><br>Coherence-based ultrasound imaging has demonstrated potential to improve breast mass diagnosis by distinguishing solid from fluid-filled masses. Harmonic imaging, which is known to reduce acoustic clutter, has the potential to offer additional improvements. However, the lack of a theoretical basis to describe these improvements precludes clinical recommendations based on physics and engineering principles. This work is the first to develop a theoretical model of coherence-based ultrasound imaging to describe both solid vs. fluid mass distinction and the effects of harmonic short-lag spatial coherence (SLSC) imaging. The scattering function and the transmit ultrasound beam of the van Cittert-Zernike theorem applied to ultrasound imaging were redefined to generate the theoretical model for solid vs. fluid mass distinction and for harmonic imaging, respectively. The derived theory was used to compare fundamental and harmonic SLSC images for hypoechoic solid, hypoechoic fluid, hyperechoic, and point targets. Theoretical simulations showed improved resolution, mitigated dark-region artifacts around hyperechoic targets, and increased spatial coherence of fluid masses in harmonic SLSC images when compared to fundamental SLSC images. Experimental data from tissue-mimicking phantoms and in vivo breast ultrasound images agreed with theoretical results. In particular, when compared to fundamental SLSC imaging, harmonic SLSC imaging improved resolution by 0.19 ± 0.25 mm, mitigated dark region artifacts by 0.55 ± 0.54 mm, and increased the spatial coherence of fluid-filled masses, resulting in a 6.50 ± 4.28 dB decrease in contrast. Results will enable future clinical recommendations supporting the use of fundamental or harmonic SLSC imaging for analyses of fluid or solid masses, respectively. These contributions establish a theoretical foundation to combine fundamental and harmonic coherence-based imaging with harmonic B-mode imaging to improve the accuracy of breast mass diagnoses.</p>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div id = "project2">
+                    <h2>Imaging Hydrated Harbor Seal Whiskers to Better Understand Perception</h2>
+                    <img src="images/proj2img.jpeg" alt="Poster for Research Project">
+                    <h4>Northwestern University <br> Dec 2021 - Jun 2022</h4>     
+                    <p>In this project, I focused on devising and carrying out methods to use a computed tomography (CT) machine to create 3D images of seal whiskers to quantify their geometry. I conducted experiments to determine the time to hydrate and dehydrate whiskers based on size, while also visually characterizing the changes in geometry.</p>   
+                </div>
+
+
+            </section>
+
+            
+        </div>
+        <script src="portfolio.js"></script>
+    </body>
+</html>

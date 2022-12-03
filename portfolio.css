@@ -1,0 +1,307 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  width: 289px;
+  height: 100%; 
+  overflow-x: hidden;
+  background-color: #ddd;
+  position: fixed; 
+  left: 0; 
+  top: 0;
+  z-index: 1;
+  padding-top: 20px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  width: 289px;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: rgba(0, 0, 0, 0.6);
+  color: skyblue;
+}
+
+.active {
+  color: skyblue !important;
+  background: black;
+}
+
+#resem {
+  font-size: 20px;
+  display: inline-block;
+}
+#resem a {
+  display: inline-block;
+  width: 144.5px;
+  font-size: 20px;
+  padding: 0px 0px;
+}
+
+/* Main content */
+.content {
+  margin-left: 281px; /* Add a top margin to avoid content overlay */
+  margin-right: -10px;
+  pointer-events: none;
+
+}
+
+.profpic {
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  left: 40px;
+}
+
+
+#name {
+  text-align: center;
+  font-size: 30px;
+
+}
+#collegeinfo {
+  position: relative;
+  top: -17px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#linkedin {
+  text-align: center;
+}
+
+#linkedin a {
+  font-size: 17px;
+}
+
+
+.navbar span {
+  position: relative;
+  font-size: 40px;
+  text-align: center;
+
+}
+
+
+.home {  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/welcome.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -10px;
+
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: relative;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 150%;
+}
+
+
+.home a{
+  pointer-events: all;
+  text-decoration: none;
+  border-color: #e7e7e7;
+  color: black;
+  border: 2px solid skyblue;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  top: 15px;
+}
+
+.home a:hover {
+  background: skyblue;
+}
+
+
+.projects {
+  padding-left: 40px;
+  padding-right: 30px;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 90%;
+  height: 1000px;
+}
+
+.projects h1{
+  text-align: center;
+  font-size: 250%;
+}
+
+.projects h4 {
+  position: relative;
+  top: -12px;
+}
+
+.projects p {
+  position: relative;
+  top: -20px;
+}
+
+#project1, #project2 {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px 12px;
+  width: 47%;
+  z-index: 0;
+  pointer-events: all;
+}
+
+#project1:hover, #project2:hover{
+  border: 2px solid skyblue;
+}
+
+#project1 {
+  float: left;
+}
+
+#project1 img {
+  height: 20%;
+  margin: 1% 25%;
+}
+
+#project2 img {
+  height: 25%;
+  margin: 1% 17%;
+}
+
+#project1btn {
+  display: block;
+  cursor: pointer;
+  pointer-events: all;
+  z-index: 1;
+  position: relative;
+  top: -15px;
+}
+
+/* read more modal */
+.modal {
+  display: none; 
+  z-index: 2; 
+  width: 142vh; 
+  height: 100vh; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  position: fixed;
+  left: 289px;
+  top: 0;
+  bottom: 0;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  z-index: -1;
+  padding: 20px;
+  margin: 25% auto;
+  border: 1px solid #888;
+  width: 80%;
+  pointer-events: all;
+}
+
+.modal-content p{
+  pointer-events: none;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  pointer-events: all;
+  z-index: 10;
+}
+
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+#project2 {
+  float: right;
+}
+
+
+.biography {
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+.biography img {
+  width: 30%;
+  border-radius: 10px;
+}
+
+.biography p {
+  text-align: left;
+  font-size: 115%;
+  padding-left: 70px;
+  padding-right: 60px;
+}
+
+* {box-sizing: border-box}
+
+.bioimg {
+  position: relative;
+  left: 35%;
+  width: 30%;
+  border-radius: 10px;
+}
+
+/* Make the image to responsive */
+.bioimg img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.bioimg:hover .overlay {
+  opacity: 1;
+}
